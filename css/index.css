@@ -258,6 +258,11 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  border: solid #22283A 1px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
