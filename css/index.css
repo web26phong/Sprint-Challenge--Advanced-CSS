@@ -167,6 +167,11 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
 .navSection {
   width: 120%;
   background-color: #f4f4f4;
@@ -195,6 +200,18 @@ p {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  .navSection .navLinks {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .navSection {
+    max-width: 500px;
+    width: 100%;
+    padding: 3% 0;
+  }
+}
 footer {
   width: 100%;
   color: #22283B;
@@ -205,6 +222,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;

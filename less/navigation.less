@@ -22,6 +22,15 @@
         }
         display: flex;
         justify-content: space-evenly;
+        @media @phone {
+            width: 100%;
+        }
     }
     border-bottom: 1px double @border-real;
+
+    @media @phone {
+        max-width: 500px;
+        width: 100%;
+        .pad(3%);
+    }
 }
