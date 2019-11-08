@@ -12,6 +12,17 @@
 
     p {
       padding:0 15px;
+      &:nth-child(even){
+        background-color: @porcelain;
+      }
+    }
+    .introText {
+      p {
+        padding:1% 15px;
+        @media @phone {
+          padding: 3% 15px;
+        }
+      }
     }
   
   }
@@ -27,6 +38,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    .astronaut{
+      width: 95%;
     }
     @media @phone {
       .sky, .launch {
@@ -70,6 +85,7 @@
 
       .btn {
         .buttonStyle(white, @btn-bg-color);
+
         @media (max-width: 650px){
           width: 50%;
           .pad(5%);
