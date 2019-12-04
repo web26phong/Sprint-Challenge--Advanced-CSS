@@ -5,7 +5,11 @@
 
 html {
   font-size: 62.5%;
+  @media @phone {
+    font-size: 60%;
+  }
 }
+
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
@@ -15,6 +19,10 @@ html, body {
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
+}
+
+h1{
+  font-size: 4rem;
 }
 
 h2 {
@@ -30,9 +38,18 @@ p {
   line-height: 1.4;
 }
 
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media @phone {
+    max-width: 500px;
+  }
 }
 

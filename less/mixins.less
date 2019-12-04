@@ -1,1 +1,25 @@
 // Mixins Here
+.bordertest(){
+    border: solid red 1px;
+}
+
+.pad(@percent: 1%){
+    padding: @percent 0;
+}
+
+.buttonStyle(@color: white, @bgColor: @btn-bg-color){
+    color: @color;
+    background-color: @bgColor;
+    width: 30%;
+    .pad(2%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: solid @bgColor 1px;
+    &:hover{
+        color: @bgColor;
+        background-color: @color;
+    }
+}

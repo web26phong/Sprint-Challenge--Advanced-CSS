@@ -3,13 +3,26 @@
 .home {
 
   .intro {
-
+    img {
+      width: 100%;
+    }
     h2 {
       padding: 15px;
     }
 
     p {
       padding:0 15px;
+      &:nth-child(even){
+        background-color: @porcelain;
+      }
+    }
+    .introText {
+      p {
+        padding:1% 15px;
+        @media @phone {
+          padding: 3% 15px;
+        }
+      }
     }
   
   }
@@ -18,12 +31,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    .astronaut{
+      width: 95%;
+    }
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
+      img {
+        width: 90%;
+      }
     }
   }
 
@@ -58,6 +84,17 @@
       }
 
       .btn {
+        .buttonStyle(white, @btn-bg-color);
+
+        @media (max-width: 650px){
+          width: 50%;
+          .pad(5%);
+        }
+
+        @media @phone {
+          width: 100%;
+          .pad(5%);
+        }
       }
     }
 
@@ -69,6 +106,19 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+    @media @phone {
+      margin-top: 5%;
+      padding: 15px;
+      flex-direction: column-reverse;
+      .walk-img{
+        width: 100%;
+        margin-left: 0;
+      }
+      .walk-text{
+        width: 100%;
+        .pad(5%);
       }
     }
   }

@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website has different layouts pre-built for specific screen sizes; The browser detects what screen size a user has and it displays that layout. In a fully responsive website, the website also has different layouts pre-built for specific screen sizes, but it also has other elements that scale and adjust automatically to a user who doesn't have those specific screen sizes. Responsive websites use responsive units such as a percent instead of a hard-coded pixel size.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile-first design means that a website is initially built with mobile-device viewing in mind, then it is adapted into a desktop view. A desktop-first design means a website is initially built with desktop-viewing in mind, and then is adapted into a mobile view.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The 'font-size: 62.5%' in the 'html' tag changes all of the font sizes from 16 to 10. Then when we us 'rem' units, they are all a factor of 10, the new root font-size.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is the same as CSS, but with additional addon coding techniques. These techniques allow us to write code quicker and do more powerful things. After we write these new techniques, a compiler turns our code into regular CSS. Basically shortcuts to do the same thing.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the nesting aspect. As long as the code has proper visual indention, nesting allows me to see exactly what part of the content I am styling. The concept of preprocessing that gives me the most trouble is that there are so many new techniques available that could make my coding so much more efficient, but I don't know about them. Having to learn them and seeing that I could have used those techniques would save my past-self so much more time.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
